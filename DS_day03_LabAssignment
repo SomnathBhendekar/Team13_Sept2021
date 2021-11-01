@@ -1,0 +1,92 @@
+// 1.WAP to find out Missing term in an array
+import java.util.*;
+class Missing_Term
+{
+	
+	public static void main(String [] args)
+	{
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the size of Array ");
+		int size=sc.nextInt();
+		int i=0;
+		int arr[] = new int[size];
+		
+		System.out.println("Enter the element of Array ");
+		for(i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		
+		System.out.println("Element of Array ");
+		for(i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		
+		
+		for(i=0;i<arr.length-1;i++)
+		{
+			if(arr[i+1]-arr[i]==1)
+			{
+				continue;
+			}
+			else
+			{
+				System.out.println("missing term : "+(arr[i]+1));
+			}
+		} 
+		
+
+	}
+	
+}
+
+
+/* 
+//2.WAP to search element in an array
+import java.util.*;
+class Missing_Term
+{
+	
+	public static void main(String [] args)
+	{
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the size of Array ");
+		int size=sc.nextInt();
+		int i=0;
+		int arr[] = new int[size];
+		
+		System.out.println("Enter the element of Array ");
+		for(i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		
+		System.out.println("Element of Array ");
+		for(i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		
+		
+		for(i=0;i<arr.length-1;i++)
+		{
+			if(arr[i+1]-arr[i]==1)
+			{
+				continue;
+			}
+			else
+			{
+				System.out.println("missing term : "+(arr[i]+1));
+			}
+		} 
+		
+
+	}
+	
+}
+ */
